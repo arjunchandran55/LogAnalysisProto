@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>log_analyzer_api</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <NoWarn>1701;1702;1591</NoWarn>
+    <DocumentationFile>C:\Users\ARJUNCHANDRAN\OneDrive - cimpresscom\Personal\Log-analyzer\log-analyzer-api\log-analyzer-api\log-analyzer-api.xml</DocumentationFile>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="HangFire.Mongo" Version="0.6.6"/>
+    <PackageReference Include="MongoDB.Bson" Version="2.10.2"/>
+    <PackageReference Include="MongoDB.Driver" Version="2.10.2"/>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3"/>
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="5.1.0"/>
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="5.1.0"/>
+    <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.2.2"/>
+    <PackageReference Include="Hangfire.AspNetCore" Version="1.7.9"/>
+    <PackageReference Include="Swashbuckle.AspNetCore.Annotations" Version="5.1.0"/>
+    <PackageReference Include="Microsoft.AspNetCore.Cors" Version="2.2.0"/>
+  </ItemGroup>
+</Project>

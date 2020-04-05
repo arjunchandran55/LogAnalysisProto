@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>log-analyzer-api</name>
+    </assembly>
+    <members>
+        <member name="M:log_analyzer_api.Controllers.LogFileUploadController.PostLogFile(Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            Uploads a given log file to log analyzer.
+            </summary>
+        </member>
+        <member name="M:log_analyzer_api.Controllers.LogInfoController.GetLogs(System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            Gets all the logs specified withing the given date range.
+            </summary>
+            <returns>The list of Logs in the given range.</returns>
+        </member>
+        <member name="M:log_analyzer_api.Controllers.LogInfoController.SearchLogs(System.String)">
+            <summary>
+            Searches the given term in all the logs.
+            </summary>
+            <returns>The list of Logs having the given search term.</returns>
+        </member>
+        <member name="M:log_analyzer_api.Controllers.LogInfoController.GetFilteredLogs(System.Collections.Generic.List{System.String},System.Int32,System.Int32)">
+            <summary>
+            Provides log filtered according to the Filter criteria
+            </summary>
+            <returns>Logs filtered as per filter criteria</returns>
+        </member>
+    </members>
+</doc>

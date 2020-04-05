@@ -1,0 +1,2 @@
+MONGO_DB_SERVER="mongodb+srv://dbuser:dbuser@loganalyzerdb-odn7n.mongodb.net/"
+MONGO_DB_NAME="LogAnalyzerData"
