@@ -8,7 +8,7 @@ export interface LogInformation {
     apiName: String;
     user: String;
     enterpriseId: String;
-    enterpriseName: String;
+    enterpriseName?: String;
     loggedDate: Date;
     email: String;
     authStatus: String;
@@ -19,5 +19,5 @@ export interface MongoId {
     "machine":Number,
     "pid":Number,
     "increment":Number,
-    "creationTime":Date
+    "creationTime":String
 }

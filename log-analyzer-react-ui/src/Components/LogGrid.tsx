@@ -7,6 +7,7 @@ import { Grid, List, Divider } from "semantic-ui-react";
 import { LogInformation } from "../Model/LogInformation";
 import { LogGridState } from "../LogGrid/model";
 import { fetchLogData } from "../Api/LogInformationApi";
+import { staticData } from "../staticApi/data";
 
 export interface ILogGridProps { lstLogInformation: LogInformation[] ; dispatch: Dispatch<Action> }
 
@@ -26,6 +27,9 @@ class LogGrid extends React.Component <ILogGridProps> {
             this.setState({lstLogInformation: this.props.lstLogInformation});
         }
         const errorCallback = () => {
+            const lstLogInformation = staticData as LogInformation[];
+            this.props.dispatch(LogGridActions.SetLogInformation(lstLogInformation));
+            this.setState({lstLogInformation: this.props.lstLogInformation});
             console.log("Error fetching data from Api");
         }
         fetchLogData("", "", "10", successCallback, errorCallback);        
